@@ -1,20 +1,25 @@
 <template>
   <div id="app">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <DefaultLayout />
+    <component :is="this.$route.meta.layout || 'div'">
+      <router-view />
+    </component>
+      
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import MainLayout from '@/components/mainLayout/MainLayout.vue'
+//  import HelloWorld from './components/HelloWorld.vue'
 // import Comments from './components/feedback/Comments.vue'
-import DefaultLayout from './components/layout/DefaultLayout.vue'
+// import DefaultLayout from './components/layout/DefaultLayout.vue'
+
 
 export default {
   name: 'App',
   components: {
+    MainLayout
     // HelloWorld,
-    DefaultLayout
+    // DefaultLayout
   }
 }
 </script>

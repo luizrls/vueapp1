@@ -1,17 +1,15 @@
 <template>
-<div class='Home'>
-    HomePage page
+<div class='content'>
+    Content
+    <slot />
 </div>
 </template>
 
 <script>
 export default {
-name: 'Home',
+name: 'Content',
 //   props: {
 //     data: String
-//   }
-// components: {
-
 //   }
 }
 </script>
