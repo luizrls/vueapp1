@@ -1,12 +1,11 @@
 <template>
-    <div class="MainLayout">
+    <div>
         <Header/>
         <Navigation/>
         <Content>
             <slot />
         </Content>
         <Footer/>
-        
     </div>
     
 </template>
