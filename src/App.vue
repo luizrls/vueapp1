@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <font-awesome-icon icon="user-secret" />
     <component :is="this.$route.meta.layout || 'div'">
       <router-view />
     </component>

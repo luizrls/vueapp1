@@ -4,14 +4,18 @@ import router from "@/router";
 import App from "./App.vue";
 import vuejquery from "vue-jquery";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUserSecret,
+  faUserCircle,
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 //import 'bootstrap/dist/css/bootstrap.css'
 //import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.config.productionTip = false;
-library.add(faUserSecret);
+library.add([faUserSecret, faUserCircle, faSearch]);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 //Vue.use(BootstrapVue)
