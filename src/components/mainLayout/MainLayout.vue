@@ -2,9 +2,12 @@
     <div>
         <Header/>
         <Navigation/>
-        <Content>
-            <slot />
-        </Content>
+        <div class="container">
+            <Content>
+                <slot />
+            </Content>
+        </div>
+        
         <Footer/>
     </div>
     

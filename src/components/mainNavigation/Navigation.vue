@@ -14,5 +14,7 @@ name: 'navigation',
 </script>
 
 <style scoped>
-
+    .navigation{
+        background: blue;
+    }
 </style>
