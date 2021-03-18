@@ -1,7 +1,7 @@
 <template>
 <!-- http://via.placeholder.com/1920x700 -->
 <div class='header'>
-    <Navbar />
+    <Navbar v-bind:menu="menu"/>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -33,11 +33,18 @@
 
 <script>
 import Navbar from "@/components/mainHeader/Navbar"
+import {menu} from "./Config.ts"
 export default {
     name: 'header',
+    data() {
+        return {
+            menu: menu
+        }
+    },
 //   props: {
 //     data: String
 //   }
+
     components:{
         Navbar
     }
